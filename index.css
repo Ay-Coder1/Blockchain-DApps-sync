@@ -29,8 +29,8 @@ button:hover {
 button.show-modal,
 .modal-box {
   position: fixed;
-  left: 19%;
-  top: 26%;
+  left: 76%;
+  top: auto;
   transform: translate(-50%, -50%);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
