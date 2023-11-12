@@ -30,7 +30,7 @@ button.show-modal,
 .modal-box {
   position: fixed;
   left: 76%;
-  top: auto;
+  top: 60%;
   transform: translate(-50%, -50%);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
