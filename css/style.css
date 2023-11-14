@@ -1958,7 +1958,7 @@ min-height: 60px;
 
 
 .readmore{
-    display: none;
+    /* display: none; */
   }
   input[type="checkbox"] {
     height: 2em;
