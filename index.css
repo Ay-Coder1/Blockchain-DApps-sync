@@ -1,4 +1,4 @@
-Google Fonts - Poppins
+/* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -48,6 +48,7 @@ button.show-modal,
 section.active .overlay {
   opacity: 1;
   pointer-events: auto;
+  animation-delay: 9s;
 }
 .modal-box {
   display: flex;
@@ -92,3 +93,27 @@ section.active .overlay {
   padding: 6px 12px;
   margin: 0 10px;
 }
+
+
+
+
+button{
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  padding: 6px;
+  font-size: 20px;
+  background-color: #265df2;
+  color: white;
+}
+
+.extra{
+  display: none;
+}
+/* .extra:nth-child(1){
+  display: block;
+} */
+
+/* .extra:nth-child(2){
+  display: block;
+} */

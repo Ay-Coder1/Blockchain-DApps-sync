@@ -15,10 +15,4 @@ closeBtn.addEventListener("click", () =>
 section.classList.remove("active")
 );
 
-input.addEventListener("change", (e) =>{
-    console.log(e.currentTarget.value);
-
-  
-})
-
 
